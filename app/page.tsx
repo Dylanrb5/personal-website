@@ -11,13 +11,13 @@ export default function Home() {
 
   const [context1, setContext1] = useState(false);
 
-  const showContext = (e) => {
-    setContext1(true);
-  }
+  // const showContext = (e) => {
+  //   setContext1(true);
+  // }
 
-  const hideContext = (e) => {
-    setContext1(false);
-  }
+  // const hideContext = (e) => {
+  //   setContext1(false);
+  // }
 
   return (
     <div className="">
@@ -44,7 +44,7 @@ export default function Home() {
                 <li><Link href={"/blog"}>Blog</Link></li>
                 <li><Link href={"/projects"}>Projects</Link></li>
                 <li><Link href={"/about"}>About</Link></li>
-                <li><Link href={"/contact"} onMouseEnter={showContext} onMouseLeave={hideContext}>Contact</Link></li>
+                <li><Link href={"/contact"}>Contact</Link></li>
               </ul>
 
             </nav>
