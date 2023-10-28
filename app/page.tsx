@@ -51,7 +51,7 @@ export default function Home() {
             <div className='z-20 name-header text-white leading-none'>
               <p>Lorem</p>
               <p className="">Ipsum Dolor</p>
-              <p className="sub-header">Dolor sit amet, consectetur adipiscing elit sed eiusmod.</p>
+              <p className="sub-header">Random subtext, dolor sit amet.</p>
               <div>
                 <ul className="front-links">
                   <li>
