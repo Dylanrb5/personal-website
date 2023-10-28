@@ -2,7 +2,7 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import { useEffect, useState } from "react"
 import ContextBox from "./components/ContextBox";
-import { CSSTransition } from 'react-transition-group'
+// import { CSSTransition } from 'react-transition-group'
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -23,12 +23,12 @@ export default function Home() {
     <div className="">
       <div className="landing">
 
-        <CSSTransition in={context1} 
+        {/* <CSSTransition in={context1} 
             unmountOnExit 
             timeout={300}
             classNames="context-1">
           <ContextBox>This is the context box.</ContextBox>
-        </CSSTransition>
+        </CSSTransition> */}
 
         {/* <Parallax pages={4}> */}
           {/* <ParallaxLayer speed={0.5}> */}
