@@ -1,0 +1,263 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html,
+body,
+:root
+{
+  height: 100%;
+  background-color: black;
+  color-scheme: dark;
+}
+
+/* @font-face {
+  font-family: "Lateef";
+  src: url("../public/fonts/Lateef-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+} */
+.name-header {
+  font-size: 8rem;
+  line-height: 0.8em;
+  position: absolute;
+  top: 20%;
+  left: 21%;
+  text-shadow: 0 0 4px white;
+  letter-spacing: -4px;
+}
+
+.sub-header {
+
+  margin-top: 20px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.front-gradient {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.22) 16.04%, rgba(0, 0, 0, 0.44) 35.42%, rgba(0, 0, 0, 0.44) 48.44%, rgba(0, 0, 0, 0.54) 60.94%, rgba(0, 0, 0, 0.44) 79.65%, rgba(0, 0, 0, 0.44) 95.31%);
+  height: 100%;
+}
+
+.bg-1 {
+
+}
+
+.landing {
+  transform-style: preserve-3d;
+  perspective: 10px;
+  height: 100vh;
+  z-index: -1;
+  background-color: antiquewhite;
+
+}
+
+.page-1 {
+  background-image: url("../public/images/blocks.jpg");
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+
+.icon-link {
+  width: 50px;
+  height: 50px;
+  background-color: #34343469;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.front-links li {
+  display: inline-block;
+  margin: 0px 20px 15px 0px;
+}
+
+.contact-link {
+  font-size: 20px;
+  letter-spacing: 0px;
+  background-color: #34343469;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.page-3 {
+  background-image: url("../public/images/abstract2-6.png");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  object-fit: cover;
+}
+
+.navbar {
+  position: absolute;
+  right: 2vw;
+  top: 1vh;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.3rem 1rem;
+  margin-left: 1rem;
+  background-color: rgba(0, 0, 0, 0.055);
+  border-radius: 20px;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+  /* backdrop-filter: blur(1px); */
+  transition: background 500ms ease-out;
+  transition: text-shadow 250ms ease-out;
+  /* transition: backdrop-filter 250ms ease-out; */
+}
+
+.navbar li:hover {
+  
+  /* backdrop-filter: blur(20px); */
+  text-shadow: 0 0 7px white;
+  background-color: rgba(33, 33, 33, 0.319);
+  transition: background 500ms ease-out;
+  transition: text-shadow 250ms ease-out;
+  /* transition: backdrop-filter 250ms ease-out; */
+}
+
+.nav-left {
+  position: absolute;
+  left: 2vw;
+  top: 1vh;
+  font-weight: 100;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin: 0.5rem;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+  transition: background 200ms ease-out;
+  transition: text-shadow 250ms ease-out;
+}
+
+.nav-left:hover {
+  text-shadow: 0 0 7px white;
+  background-color: rgba(33, 33, 33, 0.319);
+  transition: background 200ms ease-out;
+  transition: text-shadow 250ms ease-out;
+}
+.context-box {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  height: 15vh;
+  width: 15vw;
+  padding: 1rem;
+  
+  background: linear-gradient(135deg, rgba(81, 81, 81, 0.5), rgba(128, 128, 128, 0.1));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: solid 1px rgba(128, 128, 128, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.444);
+  border-radius: 2rem;
+  z-index: 50;
+}
+
+.context-1-enter {
+  opacity: 0;
+  transform: translateY(20%);
+}
+
+.context-1-enter-active {
+
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity 300ms ease;
+  transition: transform 200ms ease-out;
+}
+
+.context-1-enter-done {
+  opacity: 1;
+}
+
+  .context-1-exit {
+
+  opacity: 1;
+}
+
+.context-1-exit-active {
+  transition: all 250ms ease-out;
+  opacity: 0;
+}
+
+.about-page {
+  background-image: url("../public/images/shubham.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: 20% 20%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1101px) {
+
+  .name-header {
+    font-size: 8rem;
+    line-height: 0.8em;
+    top: 20%;
+    left: 20%;
+    text-shadow: 0 0 4px white;
+    transition: all 200ms ease-out;
+  }
+  
+  .sub-header {
+    text-shadow: 0 0 2px white;
+    max-width: 55rem;
+    font-size: 4.5rem;
+  }
+
+  .front-links li {
+    margin: 0px 20px 25px 0px;
+  }
+}
+
+@media screen and (max-width:1100px) and (min-width: 901px) {
+
+  .name-header {
+    font-size: 7rem;
+    line-height: 0.8em;
+    top: 15%;
+    left: 15%;
+    text-shadow: 0 0 4px white;
+    transition: all 200ms ease-out;
+  }
+  
+  .sub-header {
+    text-shadow: 0 0 2px white;
+    max-width: 38rem;
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width:900px) {
+  
+  .name-header {
+    font-size: 5rem;
+    line-height: 0.8em;
+    top: 15%;
+    left: 10%;
+    text-shadow: 0 0 4px white;
+    transition: all 200ms ease-out;
+  }
+  
+  .sub-header {
+    text-shadow: 0 0 2px white;
+    max-width: 30rem;
+    font-size: 3rem;
+  }
+
+  .front-links li {
+    margin: 20px 20px 0px 0px;
+  }
+}
