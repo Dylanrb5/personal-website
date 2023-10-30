@@ -44,14 +44,14 @@ export default function Home() {
                 <li><Link href={"/blog"}>Blog</Link></li>
                 <li><Link href={"/projects"}>Projects</Link></li>
                 <li><Link href={"/about"}>About</Link></li>
-                <li><Link href={"/contact"}>Contact</Link></li>
+                <li><a href="mailto:dylan1@mit.edu">Contact</a></li>
               </ul>
 
             </nav>
             <div className='z-20 name-header text-white leading-none'>
-              <p>Lorem</p>
-              <p className="">Ipsum Dolor</p>
-              <p className="sub-header">Random subtext, dolor sit amet.</p>
+              <p>Dylan</p>
+              <p className="">Rodriguez Barrera</p>
+              <p className="sub-header">Undergrad @ Mass Tech</p>
               <div>
                 <ul className="front-links">
                   <li>
@@ -80,16 +80,16 @@ export default function Home() {
 
 
           {/* <ParallaxLayer offset={1} speed={1}> */}
-            <div className="">
+            {/* <div className="">
               <div className="z-10">
                 <img src="../images/abstract1.jpg" alt="blocks" />
               </div>
-            </div>
+            </div> */}
           {/* </ParallaxLayer> */}
           
           {/* <ParallaxLayer offset={2} speed={1}> */}
             {/* <div className="h-96 bg-zinc-700"></div> */}
-            <div className="page-3"></div>
+            {/* <div className="page-3"></div> */}
           {/* </ParallaxLayer> */}
       
         {/* </Parallax> */}

@@ -488,6 +488,9 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
@@ -500,6 +503,9 @@ video {
 .top-0 {
   top: 0px;
 }
+.top-36 {
+  top: 9rem;
+}
 .top-48 {
   top: 12rem;
 }
@@ -508,6 +514,13 @@ video {
 }
 .z-20 {
   z-index: 20;
+}
+.m-7 {
+  margin: 1.75rem;
+}
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 .h-96 {
   height: 24rem;
@@ -519,19 +532,31 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
+.p-7 {
+  padding: 1.75rem;
+}
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+.text-left {
+  text-align: left;
+}
 .text-center {
   text-align: center;
-}
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
 .font-extralight {
   font-weight: 200;
+}
+.font-light {
+  font-weight: 300;
 }
 .leading-none {
   line-height: 1;
@@ -583,9 +608,15 @@ body,
   height: 100%;
 }
 
-.bg-1 {
-
+.front-gradient-2 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.45) 75.33%, #000 96.91%);
+  height: 100%;
 }
+.front-gradient-3 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.65) 55.33%, #000 96.91%);
+  height: 100%;
+}
+
 
 .landing {
   transform-style: preserve-3d;
@@ -642,6 +673,9 @@ body,
   font-size: 1.2rem;
   letter-spacing: 2px;
   font-weight: 100;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .navbar li {
@@ -679,8 +713,12 @@ body,
   padding: 0.3rem 1rem;
   border-radius: 20px;
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.055);
   transition: background 200ms ease-out;
   transition: text-shadow 250ms ease-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .nav-left:hover {
@@ -739,12 +777,37 @@ body,
 }
 
 .about-page {
-  background-image: url(/_next/static/media/shubham.c2312009.jpg);
+  background-image: url(/_next/static/media/ashe.a897460d.jpg);
   height: 100%;
   width: 100%;
   background-position: 20% 20%;
+  background-size: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.pgph-image {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  gap: 6rem;
+  text-indent: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.pfp {
+  width: 30%;
+  height: 30%;
+  border-radius: 40%;
+  align-self: center;
+  box-shadow: 7px 4px 30px 1px black;
+}
+
+.link-style {
+  text-decoration: underline;
 }
 
 .blog-page {
@@ -754,7 +817,19 @@ body,
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center;
-  background-size: 1100px;
+  background-size: 1200px;
+  background-position-y: -20px;
+  transition: all 500ms ease-out;
+}
+
+.projects-page {
+  background-image: url(/_next/static/media/abstract2-6.31e76896.png);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: 2000px;
   background-position-y: -20px;
   transition: all 500ms ease-out;
 }
@@ -781,12 +856,16 @@ body,
   }
 
   .blog-page {
-    background-size: 1500px;
-    background-position-y: -200px;
+    background-size: 105vw;
+    background-position-y: -300px;
+  }
+
+  .pgph-image {
+    align-items: center;
   }
 }
 
-@media screen and (max-width:1050px) and (min-width: 901px) {
+@media screen and (max-width:1050px) and (min-width: 701px) {
 
   .name-header {
     font-size: 7rem;
@@ -802,9 +881,22 @@ body,
     max-width: 38rem;
     font-size: 3.5rem;
   }
+
+  .body-text {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    font-size: 1.2rem;
+  }
+
+  .pfp {
+    width: 30%;
+    height: 30%;
+    align-self: normal;
+    justify-self: normal;
+  }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:700px) {
   
   .name-header {
     font-size: 5rem;
@@ -817,11 +909,52 @@ body,
   
   .sub-header {
     text-shadow: 0 0 2px white;
-    max-width: 30rem;
+    max-width: 20rem;
     font-size: 3rem;
+    line-height: 110%;
+  }
+  
+  .body-text {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 0.9rem;
   }
 
   .front-links li {
     margin: 20px 20px 0px 0px;
+  }
+
+  .navbar {
+    transform: scale(0.8);
+    margin-right: -60px;
+  }
+
+  .about-page {
+    background-image: url(/_next/static/media/ashe.a897460d.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: 20% 20%;
+    background-size: 130%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .pgph-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    text-indent: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+  
+  .pfp {
+    width: 30%;
+    height: 30%;
+    align-self: center;
+    justify-self: center;
   }
 }
