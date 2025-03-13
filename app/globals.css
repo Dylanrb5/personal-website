@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 html,
 body,
@@ -13,12 +15,16 @@ body,
   color-scheme: dark;
 }
 
+/* .lateef {
+  font-family: var(--font-lateef);
+} */
+
 /* @font-face {
   font-family: "Lateef";
   src: url("../public/fonts/Lateef-ExtraLight.ttf");
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: "Lato";
 } */
 .name-header {
@@ -32,11 +38,16 @@ body,
 }
 
 .sub-header {
-
+  text-shadow: none;
   margin-top: 20px;
   font-weight: 100;
   letter-spacing: 2px;
   line-height: 1;
+}
+
+.footer_ li{
+  display: inline-block;
+  margin: 0px 40px 0px 0px;
 }
 
 .front-gradient {
@@ -45,11 +56,16 @@ body,
 }
 
 .front-gradient-2 {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.45) 75.33%, #000 96.91%);
-  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.45) 45.33%, #000 75.91%);
+  height: 130%;
 }
 .front-gradient-3 {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.65) 55.33%, #000 96.91%);
+  height: 100%;
+}
+
+.front-gradient-4 {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.85) 67.33%, #000 86.91%);
   height: 100%;
 }
 
@@ -79,6 +95,14 @@ body,
   border-radius: 15px;
 }
 
+.icon-link-sm {
+  width: 40px;
+  height: 40px;
+  background-color: #34343469;
+  padding: 8px;
+  border-radius: 10px;
+}
+
 .front-links li {
   display: inline-block;
   margin: 0px 20px 15px 0px;
@@ -106,8 +130,19 @@ body,
   top: 1vh;
   font-size: 1.2rem;
   letter-spacing: 2px;
-  font-weight: 100;
+  font-weight: 400;
   user-select: none;
+  font-family: 'Playfair Display', serif;
+  font-family: "Lato",sans-serif;
+  font-family: "Lateef",serif;
+  z-index: 10;
+}
+
+.plus-jakarta-sans-test {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: normal;
 }
 
 .navbar li {
@@ -135,6 +170,7 @@ body,
 }
 
 .nav-left {
+  font-family: "Playfair Display", serif;
   position: absolute;
   left: 2vw;
   top: 1vh;
@@ -146,16 +182,15 @@ body,
   border-radius: 20px;
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
   background-color: rgba(0, 0, 0, 0.055);
-  transition: background 200ms ease-out;
-  transition: text-shadow 250ms ease-out;
+  transition: text-shadow 250ms ease-out, background 200ms ease-out;
   user-select: none;
+  z-index: 10;
 }
 
 .nav-left:hover {
   text-shadow: 0 0 7px white;
   background-color: rgba(33, 33, 33, 0.319);
-  transition: background 200ms ease-out;
-  transition: text-shadow 250ms ease-out;
+  transition: text-shadow 250ms ease-out, background 200ms ease-out;
 }
 
 .wide-letters {
@@ -228,8 +263,8 @@ body,
 }
 
 .pfp {
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
   border-radius: 40%;
   align-self: center;
   box-shadow: 7px 4px 30px 1px black;
@@ -240,7 +275,7 @@ body,
 }
 
 .blog-page {
-  background-image: url("../public/images/sujin.jpg");
+  background-image: url("../public/images/hassaan.jpg");
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -261,6 +296,77 @@ body,
   transition: all 500ms ease-out;
 }
 
+.tierlist {
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  font-family: "Lato";
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2em;
+}
+
+.tier {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 6rem;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.tier * {
+  /* border-bottom: 1px solid black;
+  border-top: 1px solid black; */
+
+}
+
+.tier-letter {
+  /* height: 6rem; */
+  /* height: auto; */
+  width: 6rem;
+  padding-right: 2px;
+  border-right: 2px solid black;
+
+}
+
+.tier-item {
+  position: relative;
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  /* border-bottom: 2px solid black; */
+  
+}
+
+.tier-item-desc {
+  position: absolute;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1em;
+  top: 0;
+  left: 0;
+
+
+  width: 7rem;
+  height: 7rem;
+  overflow: hidden;
+  background-color: #000000;
+  color: white;
+  margin: auto;
+  user-select: none;
+  opacity: 0%;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.tier-item-desc:hover {
+  opacity: 70%;
+}
+
+
+
+
 @media screen and (min-width: 1051px) {
 
   .name-header {
@@ -268,12 +374,12 @@ body,
     line-height: 0.8em;
     top: 20%;
     left: 20%;
-    text-shadow: 0 0 4px white;
+    text-shadow: 0 0 2px white;
     transition: all 200ms ease-out;
   }
   
   .sub-header {
-    text-shadow: 0 0 2px white;
+    text-shadow: 0 0 0px white;
     max-width: 55rem;
     font-size: 4.5rem;
   }
@@ -284,7 +390,7 @@ body,
 
   .blog-page {
     background-size: 105vw;
-    background-position-y: -300px;
+    background-position-y: -100px;
   }
 
   .pgph-image {
@@ -315,11 +421,23 @@ body,
     font-size: 1.2rem;
   }
 
+  .pgph-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    text-indent: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+  
   .pfp {
     width: 30%;
     height: 30%;
-    align-self: normal;
-    justify-self: normal;
+    align-self: center;
+    justify-self: center;
   }
 }
 

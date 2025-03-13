@@ -1,15 +1,24 @@
-"use client";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
-import { useEffect, useState } from "react"
-import ContextBox from "./components/ContextBox";
+// import { useEffect, useState } from "react"
+import ContextBox from "./components/contextbox/ContextBox";
 // import { CSSTransition } from 'react-transition-group'
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { SessionProvider } from "next-auth/react";
+import {getUserSession} from "@/app/utils/session";
+import { Lateef, Lato } from 'next/font/google'
+
+const lateef = Lateef({ subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"] });
+
+const lato = Lato({ subsets: ["latin"],
+  weight: ["100", "300", "400", "700"],
+  variable: "--font-inter" })
 
 
-export default function Home() {
-
-  const [context1, setContext1] = useState(false);
+export default async function Home() {
+  const user = await getUserSession();
+  // const [context1, setContext1] = useState(false);
 
   // const showContext = (e) => {
   //   setContext1(true);
@@ -21,6 +30,7 @@ export default function Home() {
 
   return (
     <div className="">
+      <div>{JSON.stringify(user)}</div>
       <div className="landing">
 
         {/* <CSSTransition in={context1} 
@@ -33,13 +43,13 @@ export default function Home() {
         {/* <Parallax pages={4}> */}
           {/* <ParallaxLayer speed={0.5}> */}
             <div className="page-1">
-            <div className="w-screen text absolute top-0 left-0 front-gradient"></div>
+            <div className="text absolute top-0 left-0 front-gradient-4 w-full h-full"> &nbsp;</div>
             {/* <img src="../images/blocks.jpg" alt="blocks" className="bg-1" /> */}
             </div>
           {/* </ParallaxLayer> */}
 
           {/* <ParallaxLayer speed={1}> */}
-            <nav className="navbar">
+            <nav className={`navbar`}>
               <ul>
                 <li><Link href={"/blog"}>Blog</Link></li>
                 <li><Link href={"/projects"}>Projects</Link></li>
@@ -48,6 +58,7 @@ export default function Home() {
               </ul>
 
             </nav>
+            <div>hello world</div>
             <div className='z-20 name-header text-white leading-none'>
               <p>Dylan</p>
               <p className="">Rodriguez Barrera</p>

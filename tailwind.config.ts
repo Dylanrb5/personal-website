@@ -14,8 +14,8 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        // "Lateef": ["Lateef", "serif"],
-        "Lato": ["Lato", "sans-serif"]
+        "Lato": ["Lato", "sans-serif"],
+        lateef: ['var(--font-lateef)']
       }
     },
   },

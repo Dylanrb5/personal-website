@@ -23,16 +23,17 @@ const about = () => {
         <h1 className='pb-5 text-4xl'>About Me</h1>
         <div className='pgph-image'>
 
-            <img src='../images/me.jpg' className='pfp'/>
+            <img src='../images/me.jpg' className='pfp' alt='a photo of me'/>
             <div className='text-left'>
-              <p>Hi, I'm Dylan Rodriguez Barrera, a sophomore at MIT, AKA Massachusetts Institute of Technology. 
-              My major, at the moment, is "Course 6–4: Artificial Intelligence and Decision Making." I recently 
-              (October 2023) realized that it would be pretty cool to have my own website, especially now that 
-              I am learning React JS and also have a great taste in design, in my opinion. I made one years ago, but I've 
+              <p>Hi, I'm Dylan Rodriguez Barrera, a junior at MIT, AKA Massachusetts Institute of Technology. 
+              My major is "Course 6–4: Artificial Intelligence and Decision Making." I recently 
+              (October 2023) realized that it would be pretty cool to have my own website. 
+              Just for documenting stuff, writing thoughts down, etc. I made one years ago, but I've 
               changed quite a bit since then. I wouldn't call myself a 
-              graphic designer, and I never have been, but I sort of ended up being the main front end developer for my school's 
-              solar car team (<a href='https://www.mitsolar.com/' target='_blank' className='link-style'>MIT SEVT</a>), 
-              tasked with creating the brand new infotainment system's interface and now the race strategy planner. 
+              graphic designer, and I never have been, but I try to make things not so ugly.
+              I don't want to take the aesthetic of this website too seriously, though. Some stock images can be pretty funny. 
+              There can be humor in anything, and everything. Also, the photo of me here is very old. It's of me near the the start of my 
+              Sophomore year at this school, so I don't look exactly the same as I do now, I think.
               {/* I say "brand new" because
               our new status as an MOV-class team requires us to have an infotainment system, and that's where I come in. Oh, also, 
               I wanted to mention that I'm aware there's an awkward screen size where this paragraph will have a huge blank area—it might be fixed with
