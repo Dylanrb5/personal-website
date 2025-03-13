@@ -1,4 +1,4 @@
-// File: /Users/dylanrb/personal-website/app/projects/horror-video-game/page.tsx
+// File: /Users/dylanrb/personal-website/app/projects/horror-video-game/page.jsx
 import * as entry from '../../../../../app/projects/horror-video-game/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
