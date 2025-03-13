@@ -1,8 +1,17 @@
 {
+  "/_not-found": "app/_not-found.js",
   "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/blog/page": "app/blog/page.js",
+  "/about/page": "app/about/page.js",
+  "/login/page": "app/login/page.js",
   "/projects/page": "app/projects/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/projects/learning-3rd-language/page": "app/projects/learning-3rd-language/page.js",
+  "/posts/[slug]/page": "app/posts/[slug]/page.js",
+  "/posts/instrument-tier-list/page": "app/posts/instrument-tier-list/page.js",
+  "/posts/first-post/page": "app/posts/first-post/page.js",
   "/projects/horror-video-game/page": "app/projects/horror-video-game/page.js",
-  "/projects/music/page": "app/projects/music/page.js"
+  "/projects/music/page": "app/projects/music/page.js",
+  "/posts/2024-music-highlights/page": "app/posts/2024-music-highlights/page.js"
 }

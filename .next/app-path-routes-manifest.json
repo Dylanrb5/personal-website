@@ -1,0 +1,17 @@
+{
+  "/_not-found": "/_not-found",
+  "/page": "/",
+  "/favicon.ico/route": "/favicon.ico",
+  "/blog/page": "/blog",
+  "/about/page": "/about",
+  "/login/page": "/login",
+  "/projects/page": "/projects",
+  "/contact/page": "/contact",
+  "/projects/learning-3rd-language/page": "/projects/learning-3rd-language",
+  "/posts/[slug]/page": "/posts/[slug]",
+  "/posts/instrument-tier-list/page": "/posts/instrument-tier-list",
+  "/posts/first-post/page": "/posts/first-post",
+  "/projects/horror-video-game/page": "/projects/horror-video-game",
+  "/projects/music/page": "/projects/music",
+  "/posts/2024-music-highlights/page": "/posts/2024-music-highlights"
+}
