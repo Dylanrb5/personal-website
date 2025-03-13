@@ -136,6 +136,7 @@ body,
   font-family: "Lato",sans-serif;
   font-family: "Lateef",serif;
   z-index: 10;
+  font-size: 1em;
 }
 
 .plus-jakarta-sans-test {
@@ -470,8 +471,8 @@ body,
   }
 
   .navbar {
-    transform: scale(0.8);
-    margin-right: -60px;
+    /* transform: scale(0.8); */
+    margin-right: -20px;
   }
 
   .about-page {
@@ -500,5 +501,13 @@ body,
     height: 30%;
     align-self: center;
     justify-self: center;
+  }
+}
+
+
+@media screen and (max-width:510px) {
+  .navbar {
+    transform: translateY(90%);
+    
   }
 }

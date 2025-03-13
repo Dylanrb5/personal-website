@@ -33,7 +33,8 @@ const about = () => {
               graphic designer, and I never have been, but I try to make things not so ugly.
               I don't want to take the aesthetic of this website too seriously, though. Some stock images can be pretty funny. 
               There can be humor in anything, and everything. Also, the photo of me here is very old. It's of me near the the start of my 
-              Sophomore year at this school, so I don't look exactly the same as I do now, I think.
+              Sophomore year at this school, so I don't look exactly the same as I do now, I think. Also, yes, I probably need to make a 
+              hamburger button for mobile viewing.
               {/* I say "brand new" because
               our new status as an MOV-class team requires us to have an infotainment system, and that's where I come in. Oh, also, 
               I wanted to mention that I'm aware there's an awkward screen size where this paragraph will have a huge blank area—it might be fixed with

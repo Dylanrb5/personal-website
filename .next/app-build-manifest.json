@@ -1,140 +1,39 @@
 {
   "pages": {
-    "/_not-found": [
-      "static/chunks/webpack-c55459c812f35121.js",
-      "static/chunks/fd9d1056-bdbc21787612b876.js",
-      "static/chunks/864-1802646cc7a21fff.js",
-      "static/chunks/main-app-2d46f6244c943167.js",
-      "static/chunks/app/_not-found-be6954023b538636.js"
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/layout": [
-      "static/chunks/webpack-c55459c812f35121.js",
-      "static/chunks/fd9d1056-bdbc21787612b876.js",
-      "static/chunks/864-1802646cc7a21fff.js",
-      "static/chunks/main-app-2d46f6244c943167.js",
-      "static/css/65b00845381246fa.css",
-      "static/chunks/app/layout-ebf27e2e19152dd4.js"
-    ],
-    "/page": [
-      "static/chunks/webpack-c55459c812f35121.js",
-      "static/chunks/fd9d1056-bdbc21787612b876.js",
-      "static/chunks/864-1802646cc7a21fff.js",
-      "static/chunks/main-app-2d46f6244c943167.js",
-      "static/chunks/724-f94bd91fcc5f994c.js",
-      "static/css/646eb7c282420697.css",
-      "static/chunks/app/page-e7da0e1047c5ae42.js"
-    ],
-    "/blog/page": [
-      "static/chunks/webpack-c55459c812f35121.js",
-      "static/chunks/fd9d1056-bdbc21787612b876.js",
-      "static/chunks/864-1802646cc7a21fff.js",
-      "static/chunks/main-app-2d46f6244c943167.js",
-      "static/chunks/724-f94bd91fcc5f994c.js",
-      "static/chunks/964-10ac1cf7177b4396.js",
-      "static/css/246e2f815e930bde.css",
-      "static/chunks/app/blog/page-5361af67ba25eb30.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
     "/about/page": [
-      "static/chunks/webpack-c55459c812f35121.js",
-      "static/chunks/fd9d1056-bdbc21787612b876.js",
-      "static/chunks/864-1802646cc7a21fff.js",
-      "static/chunks/main-app-2d46f6244c943167.js",
-      "static/chunks/724-f94bd91fcc5f994c.js",
-      "static/chunks/app/about/page-cd41245cfc341e4d.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/about/page.js"
     ],
-    "/login/page": [
-      "static/chunks/webpack-c55459c812f35121.js",
-      "static/chunks/fd9d1056-bdbc21787612b876.js",
-      "static/chunks/864-1802646cc7a21fff.js",
-      "static/chunks/main-app-2d46f6244c943167.js",
-      "static/chunks/app/login/page-707f3f3c2fbb5dcc.js"
-    ],
-    "/projects/page": [
-      "static/chunks/webpack-c55459c812f35121.js",
-      "static/chunks/fd9d1056-bdbc21787612b876.js",
-      "static/chunks/864-1802646cc7a21fff.js",
-      "static/chunks/main-app-2d46f6244c943167.js",
-      "static/chunks/724-f94bd91fcc5f994c.js",
-      "static/chunks/964-10ac1cf7177b4396.js",
-      "static/css/1d524ec8627555ad.css",
-      "static/chunks/app/projects/page-08ff03d88808a570.js"
-    ],
-    "/contact/page": [
-      "static/chunks/webpack-c55459c812f35121.js",
-      "static/chunks/fd9d1056-bdbc21787612b876.js",
-      "static/chunks/864-1802646cc7a21fff.js",
-      "static/chunks/main-app-2d46f6244c943167.js",
-      "static/chunks/app/contact/page-896aa0c9ac2fe234.js"
-    ],
-    "/projects/learning-3rd-language/page": [
-      "static/chunks/webpack-c55459c812f35121.js",
-      "static/chunks/fd9d1056-bdbc21787612b876.js",
-      "static/chunks/864-1802646cc7a21fff.js",
-      "static/chunks/main-app-2d46f6244c943167.js",
-      "static/chunks/724-f94bd91fcc5f994c.js",
-      "static/chunks/964-10ac1cf7177b4396.js",
-      "static/css/9d06d7039c91925e.css",
-      "static/chunks/app/projects/learning-3rd-language/page-4e45fc4849e5d5d6.js"
-    ],
-    "/posts/[slug]/page": [
-      "static/chunks/webpack-c55459c812f35121.js",
-      "static/chunks/fd9d1056-bdbc21787612b876.js",
-      "static/chunks/864-1802646cc7a21fff.js",
-      "static/chunks/main-app-2d46f6244c943167.js",
-      "static/chunks/724-f94bd91fcc5f994c.js",
-      "static/chunks/964-10ac1cf7177b4396.js",
-      "static/css/6845f473aa6a26cd.css",
-      "static/chunks/app/posts/[slug]/page-c03cbeb4d03eed84.js"
-    ],
-    "/posts/instrument-tier-list/page": [
-      "static/chunks/webpack-c55459c812f35121.js",
-      "static/chunks/fd9d1056-bdbc21787612b876.js",
-      "static/chunks/864-1802646cc7a21fff.js",
-      "static/chunks/main-app-2d46f6244c943167.js",
-      "static/chunks/724-f94bd91fcc5f994c.js",
-      "static/chunks/964-10ac1cf7177b4396.js",
-      "static/css/e7d7a18d5dbc6f7e.css",
-      "static/chunks/app/posts/instrument-tier-list/page-6b493a84ec84a25f.js"
-    ],
-    "/posts/first-post/page": [
-      "static/chunks/webpack-c55459c812f35121.js",
-      "static/chunks/fd9d1056-bdbc21787612b876.js",
-      "static/chunks/864-1802646cc7a21fff.js",
-      "static/chunks/main-app-2d46f6244c943167.js",
-      "static/chunks/724-f94bd91fcc5f994c.js",
-      "static/chunks/964-10ac1cf7177b4396.js",
-      "static/css/50a6734ecc434e94.css",
-      "static/chunks/app/posts/first-post/page-405f025bc560d487.js"
-    ],
-    "/projects/horror-video-game/page": [
-      "static/chunks/webpack-c55459c812f35121.js",
-      "static/chunks/fd9d1056-bdbc21787612b876.js",
-      "static/chunks/864-1802646cc7a21fff.js",
-      "static/chunks/main-app-2d46f6244c943167.js",
-      "static/chunks/724-f94bd91fcc5f994c.js",
-      "static/chunks/964-10ac1cf7177b4396.js",
-      "static/css/7559eb7c1a06a4d5.css",
-      "static/chunks/app/projects/horror-video-game/page-16fcab7eb1a299de.js"
-    ],
-    "/projects/music/page": [
-      "static/chunks/webpack-c55459c812f35121.js",
-      "static/chunks/fd9d1056-bdbc21787612b876.js",
-      "static/chunks/864-1802646cc7a21fff.js",
-      "static/chunks/main-app-2d46f6244c943167.js",
-      "static/chunks/724-f94bd91fcc5f994c.js",
-      "static/chunks/964-10ac1cf7177b4396.js",
-      "static/css/fbba149dda160183.css",
-      "static/chunks/app/projects/music/page-fdfbcc2a18c70746.js"
+    "/blog/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/blog/page.css",
+      "static/chunks/app/blog/page.js"
     ],
     "/posts/2024-music-highlights/page": [
-      "static/chunks/webpack-c55459c812f35121.js",
-      "static/chunks/fd9d1056-bdbc21787612b876.js",
-      "static/chunks/864-1802646cc7a21fff.js",
-      "static/chunks/main-app-2d46f6244c943167.js",
-      "static/chunks/724-f94bd91fcc5f994c.js",
-      "static/chunks/964-10ac1cf7177b4396.js",
-      "static/css/ca7c417dc97966da.css",
-      "static/chunks/app/posts/2024-music-highlights/page-556584eee14cb51c.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/posts/2024-music-highlights/page.css",
+      "static/chunks/app/posts/2024-music-highlights/page.js"
+    ],
+    "/projects/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/projects/page.css",
+      "static/chunks/app/projects/page.js"
     ]
   }
 }
