@@ -8,7 +8,7 @@ const LoginComp = () => {
 
   return (
     <div>
-        <div className="w-screen text absolute top-0 left-0 front-gradient"></div>
+        {/* <div className="w-screen text absolute top-0 left-0 front-gradient"></div>
 
         <nav className="nav-left">
                 <Link href={"/"}>Home</Link>
@@ -23,7 +23,7 @@ const LoginComp = () => {
               </ul>
 
             </nav>
-        <button onClick={() => signIn("google")} className='text-center absolute top-48 left-1/3 rounded-md bg-amber-700 font-extralight text-2xl p-5'>Log in with Google</button>
+        <button onClick={() => signIn("google")} className='text-center absolute top-48 left-1/3 rounded-md bg-amber-700 font-extralight text-2xl p-5'>Log in with Google</button> */}
     </div>
   )
 }
