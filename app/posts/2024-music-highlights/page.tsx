@@ -102,7 +102,7 @@ const page = () => {
 
 
                 <div className={styles.trackHeader}>
-                <a href="https://www.youtube.com/watch?v=6ro1aHvhGec" target="_blank">
+                <a href="https://www.youtube.com/watch?v=Wn-uiYZK3WI" target="_blank">
                   <img src="https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/f8/bb/c4/f8bbc4ff-e789-3a59-4f18-63c231770f07/ANTCD-A0000001044.jpg/1200x1200bf-60.jpg" className='w-60 h-60'/>
                   </a>
                   <div className={styles.trackTitle}>
