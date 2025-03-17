@@ -62,7 +62,7 @@ export default async function Home() {
             <div className='z-20 name-header text-white leading-none'>
               <p>Dylan</p>
               <p className="">Rodriguez Barrera</p>
-              <p className="sub-header">Undergrad @ Mass Tech</p>
+              <p className="sub-header">Junior @ Mass Tech</p>
               <div>
                 <ul className="front-links">
                   <li>
