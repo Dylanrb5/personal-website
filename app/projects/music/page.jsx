@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Link from 'next/link'
 import styles from './music.module.css';
@@ -5,10 +7,12 @@ import hassan from '../../../public/images/hassaan.jpg'
 import background from '../../../public/images/chmyphoto.jpg'
 import Image from 'next/image';
 import Footer from '@/app/components/footer/Footer';
+import HamburgerMenu from '@/app/components/HamburgerMenu';
 
 const page = () => {
   return (
     <div>
+        <HamburgerMenu />
         <Image src={background} alt='background of cubes' className={styles.bg}/>
         <div className="w-screen text absolute top-0 left-0 front-gradient-2"></div>
         <nav className="nav-left">

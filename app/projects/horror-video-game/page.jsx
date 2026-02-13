@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Link from 'next/link'
 import styles from './horror-video-game.module.css';
@@ -5,10 +7,12 @@ import hassan from '../../../public/images/hassaan.jpg'
 import background from '../../../public/images/chmyphoto.jpg'
 import Image from 'next/image';
 import Footer from '@/app/components/footer/Footer';
+import HamburgerMenu from '@/app/components/HamburgerMenu';
 
 const page = () => {
   return (
     <div>
+        <HamburgerMenu />
         <Image src={background} alt='background of cubes' className={styles.bg}/>
         <div className="w-screen text absolute top-0 left-0 front-gradient-2"></div>
         <nav className="nav-left">
@@ -49,11 +53,6 @@ const page = () => {
                 </p>
 
                 <iframe className="mx-auto my-10" width="560" height="315" src="https://www.youtube.com/embed/sckCAmnpxQQ?si=raSv241eEKqL09tC" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-
-                <p className='mb-8'>
-                Will make/add more videos soon (March 2025)
-
-                </p>
 
                 <p className={styles.footer}>
                   <Footer/>

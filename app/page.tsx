@@ -1,5 +1,7 @@
+'use client'
+
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
-// import { useEffect, useState } from "react"
+import { useState } from "react"
 import ContextBox from "./components/contextbox/ContextBox";
 // import { CSSTransition } from 'react-transition-group'
 import { useRouter } from "next/navigation";
@@ -7,30 +9,20 @@ import Link from "next/link";
 import { SessionProvider } from "next-auth/react";
 import {getUserSession} from "@/app/utils/session";
 import { Lateef, Lato } from 'next/font/google'
+import HamburgerMenu from "./components/HamburgerMenu"
 
-const lateef = Lateef({ subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700", "800"] });
+// const lateef = Lateef({ subsets: ["latin"],
+//   weight: ["200", "300", "400", "500", "600", "700", "800"] });
 
-const lato = Lato({ subsets: ["latin"],
-  weight: ["100", "300", "400", "700"],
-  variable: "--font-inter" })
+// const lato = Lato({ subsets: ["latin"],
+//   weight: ["100", "300", "400", "700"],
+//   variable: "--font-inter" })
 
 
-export default async function Home() {
-  const user = await getUserSession();
-  // const [context1, setContext1] = useState(false);
-
-  // const showContext = (e) => {
-  //   setContext1(true);
-  // }
-
-  // const hideContext = (e) => {
-  //   setContext1(false);
-  // }
-
+export default function Home() {
   return (
     <div className="">
-      <div>{JSON.stringify(user)}</div>
+      <HamburgerMenu />
       <div className="landing">
 
         {/* <CSSTransition in={context1} 
@@ -48,7 +40,8 @@ export default async function Home() {
             </div>
           {/* </ParallaxLayer> */}
 
-          {/* <ParallaxLayer speed={1}> */}
+          {/* <ParallexLayer speed={1}> */}
+            {/* Desktop Navbar */}
             <nav className={`navbar`}>
               <ul>
                 <li><Link href={"/blog"}>Blog</Link></li>
@@ -56,13 +49,13 @@ export default async function Home() {
                 <li><Link href={"/about"}>About</Link></li>
                 <li><a href="mailto:dylan1@mit.edu">Contact</a></li>
               </ul>
-
             </nav>
+
             <div>hello world</div>
             <div className='z-20 name-header text-white leading-none'>
               <p>Dylan</p>
               <p className="">Rodriguez Barrera</p>
-              <p className="sub-header">Junior @ MIT</p>
+              <p className="sub-header">Senior @ MIT</p>
               <div>
                 <ul className="front-links">
                   <li>

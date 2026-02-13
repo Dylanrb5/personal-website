@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Link from 'next/link'
 import styles from './instrument-tier-list.module.css';
@@ -5,11 +7,13 @@ import hassan from '../../../public/images/hassaan.jpg'
 import Image from 'next/image';
 import Footer from '@/app/components/footer/Footer';
 import TierlistItem from '@/app/components/tierlistItem/TierlistItem';
+import HamburgerMenu from '@/app/components/HamburgerMenu';
 
 
 const page = () => {
   return (
     <div >
+        <HamburgerMenu />
         <Image src={hassan} alt='background of cubes' className={styles.bg}/>
         <div className="w-screen text absolute top-0 left-0 front-gradient-2"></div>
         <nav className="nav-left">

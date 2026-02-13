@@ -1,8 +1,14 @@
+'use client'
+
 import React from 'react'
+import HamburgerMenu from '@/app/components/HamburgerMenu'
 
 const contact = () => {
   return (
-    <div>contact</div>
+    <div>
+      <HamburgerMenu />
+      contact
+    </div>
   )
 }
 

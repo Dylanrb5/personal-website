@@ -1,18 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 html,
 body,
 :root
 {
   height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   background-color: black;
   color-scheme: dark;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+  /* font-family: var(--my-font), serif; */
 }
 
 /* .lateef {
@@ -75,8 +89,9 @@ body,
   perspective: 10px;
   height: 100vh;
   z-index: -1;
-  background-color: antiquewhite;
-
+  background-color: black;
+  margin: 0;
+  padding: 0;
 }
 
 .page-1 {
@@ -128,15 +143,15 @@ body,
   position: absolute;
   right: 2vw;
   top: 1vh;
-  font-size: 1.2rem;
   letter-spacing: 2px;
   font-weight: 400;
   user-select: none;
-  font-family: 'Playfair Display', serif;
-  font-family: "Lato",sans-serif;
-  font-family: "Lateef",serif;
+  /* font-family: "Lato",sans-serif;
+  font-family: 'Playfair Display', serif; */
+  font-family: "Lateef", sans-serif;
+  font-family: var(--my-font), serif !important;
   z-index: 10;
-  font-size: 1em;
+  font-size: 0.9rem;
 }
 
 .plus-jakarta-sans-test {
@@ -397,6 +412,11 @@ body,
   .pgph-image {
     align-items: center;
   }
+
+  /* Hide hamburger menu on desktop */
+  .hamburger-button {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width:1050px) and (min-width: 701px) {
@@ -440,6 +460,10 @@ body,
     align-self: center;
     justify-self: center;
   }
+
+  .hamburger-button {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width:700px) {
@@ -470,9 +494,103 @@ body,
     margin: 20px 20px 0px 0px;
   }
 
+  /* Hide desktop navbar on mobile */
   .navbar {
-    /* transform: scale(0.8); */
-    margin-right: -20px;
+    display: none;
+  }
+
+  /* Hamburger button styling */
+  .hamburger-button {
+    position: absolute;
+    right: 2vw;
+    top: 1vh;
+    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .hamburger-line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 300ms cubic-bezier(.17,.38,.14,.89);
+  }
+
+  .hamburger-line.open {
+    transition: all 300ms cubic-bezier(.17,.38,.14,.89);
+  }
+
+  /* Hamburger to X animation */
+  .hamburger-line.open:nth-child(1) {
+    transform: rotate(49deg) translate(10px, 11px);
+  }
+
+  .hamburger-line.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-line.open:nth-child(3) {
+    transform: rotate(-49deg) translate(7px, -11px);
+  }
+
+  /* burger menu overlay */
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 300ms cubic-bezier(.17,.38,.14,.89);
+  }
+
+  .mobile-menu-overlay.closing {
+    animation: fadeOut 300ms cubic-bezier(.17,.38,.14,.89);
+  }
+
+  .mobile-menu {
+    text-align: center;
+    animation: slideUp 300ms cubic-bezier(.17,.38,.14,.89);
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+  }
+
+  .mobile-menu li {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-family: var(--my-font), serif;
+  }
+
+  .mobile-menu a {
+    color: white;
+    text-decoration: none;
+    transition: text-shadow 250ms cubic-bezier(.17,.38,.14,.89);
+  }
+
+  .mobile-menu a:hover {
+    text-shadow: 0 0 10px white;
   }
 
   .about-page {
@@ -506,9 +624,35 @@ body,
 
 
 @media screen and (max-width:610px) {
-  .navbar {
-    transform: translateY(50%);
-    font-size: 0.8rem;
-    
+  /* Empty or additional 610px specific styles can go here */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }

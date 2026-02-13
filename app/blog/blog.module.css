@@ -24,6 +24,7 @@
     height: auto;
 
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     max-height: max-content;
@@ -54,12 +55,17 @@
 }
 
 .post:hover {
-    border-top: 3px solid rgba(138, 138, 138, 0.481);
+    /* border-top: 3px solid rgba(138, 138, 138, 0.481);
     border-bottom: 3px solid rgba(138, 138, 138, 0.481);
     border-left: 3px solid rgba(138, 138, 138, 0.25);
     border-right: 3px solid rgba(138, 138, 138, 0.25);
-    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1); */
     /* transition: border-top 1s cubic-bezier(0.165, 0.84, 0.44, 1); */
+
+    border-bottom: 3px solid rgba(138, 138, 138, 0);
+    /* border-top: 3px solid rgba(0, 0, 0, 0.731); */
+    background-color: rgba(21, 25, 25, 0.383);
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .header {
@@ -127,7 +133,7 @@
 
     .post {
         min-width: 100px;
-        width: 90%;
+        width: 100%;
         border-radius: 0px;
     }
 

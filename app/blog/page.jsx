@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import Link from 'next/link';
 import styles from './blog.module.css';
@@ -5,6 +7,7 @@ import Image from 'next/image';
 import abstract from '../../public/images/abstract2-6.png'
 import bilal from '../../public/images/bilal.jpg'
 import milan from '../../public/images/milad.jpg'
+import HamburgerMenu from '@/app/components/HamburgerMenu'
 
 const blog = () => {
   const getData = async () => {
@@ -48,11 +51,14 @@ const blog = () => {
 
   return (
     <div className='blog-page'>
+        <HamburgerMenu />
         <div className="w-screen absolute top-0 left-0 front-gradient"></div>
 
         
         <nav className="navbar">
-              <ul>
+              <ul style={{ 
+                fontFamily: "Lateef",
+              }}>
                 <li>Blog</li>
                 <li><Link href={"/projects"}>Projects</Link></li>
                 <li><Link href={"/about"}>About</Link></li>

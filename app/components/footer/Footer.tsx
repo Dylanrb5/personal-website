@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
+    <>
         <ul className="footer_">
                   <li>
                     <a className="" target="_blank" href="https://www.instagram.com/dylanrb.camera.roll">
@@ -23,7 +23,7 @@ const Footer = () => {
                     <a href="mailto:dylan1@mit.edu">Text</a>
                   </li> */}
                 </ul>
-    </div>
+    </>
   )
 }
 
