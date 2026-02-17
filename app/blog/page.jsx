@@ -76,6 +76,8 @@ const blog = () => {
 
         <div className={styles.content}>
 
+          <PostCard title={"Kubrick Ranked"} desc={"Ranking Stanley Kubrick movies"} image={milan} postName={"kubrick-ranked"}/>
+          <PostCard title={"My 2025 Music Highlights"} desc={"Extremely good music"} image={milan} postName={"2025-music-highlights"}/>
           <PostCard title={"My 2024 Music Highlights"} desc={"No I don't mean music that came out in 2024"} image={milan} postName={"2024-music-highlights"}/>
           <PostCard title={"INSTRUMENT TIER LIST"} desc={"What I think are the best"} image={abstract} postName={"instrument-tier-list"}/>
           <PostCard title={"FIRST POST"} desc={"This is the first post of my blog. Maybe these cards are too big, but I would need something on the right..."} image={bilal} postName={"first-post"}/>
