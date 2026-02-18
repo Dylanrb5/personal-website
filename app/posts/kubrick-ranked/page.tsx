@@ -29,7 +29,7 @@ const page = () => {
 
         <div className={styles.container}>
             <h1 className={styles.header}>Kubrick Ranked</h1>
-            <h6 className={styles.date}>2025.02.17</h6>
+            <h6 className={styles.date}>2026.02.17</h6>
             <div className={styles.body}>
                 <p className='mb-8'>
                 I used to think it was Kyoo-brick. Everything here is A-tier at least. Everything almost tied for the same spot.

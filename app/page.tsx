@@ -5,6 +5,7 @@ import { useState } from "react"
 import ContextBox from "./components/contextbox/ContextBox";
 // import { CSSTransition } from 'react-transition-group'
 import { useRouter } from "next/navigation";
+import { track } from '@vercel/analytics';
 import Link from "next/link";
 import { SessionProvider } from "next-auth/react";
 import {getUserSession} from "@/app/utils/session";
@@ -59,17 +60,17 @@ export default function Home() {
               <div>
                 <ul className="front-links">
                   <li>
-                    <a className="" target="_blank" href="https://www.instagram.com/dylanrb.camera.roll">
+                    <a className="" target="_blank" href="https://www.instagram.com/dylanrb.camera.roll" onClick={() => track('Instagram link clicked')}>
                       <img src="../icons/ig-logo-white.png" className="icon-link"/>
                     </a>
                   </li>
                   <li>
-                    <a className="" target="_blank" href="https://www.github.com/dylanrb5">
+                    <a className="" target="_blank" href="https://www.github.com/dylanrb5" onClick={() => track('Github profile clicked')}>
                       <img src="../icons/github-icon-white.png" className="icon-link"/>
                     </a>
                   </li>
                   <li>
-                    <a className="" target="_blank" href="https://www.linkedin.com/in/dylan-rb-0/">
+                    <a className="" target="_blank" href="https://www.linkedin.com/in/dylan-rb-0/" onClick={() => track('Linkedin link clicked')}>
                       <img src="../icons/linkedin-white.png" className="icon-link"/>
                     </a>
                   </li>

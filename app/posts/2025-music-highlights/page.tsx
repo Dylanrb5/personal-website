@@ -113,7 +113,7 @@ const page = () => {
                   Ah, it's just so beautiful. I don't like summer, but it reminds me of a beautiful West Coast summer. Sort of a Lady Gaga sound, although I don't quite remember what she sounds like.
                   Similar raspy voice, I think. But you have to listen to it, at least once. Crying tears, confusing fears, they are no longer. 
                   The entire album is a great listen. One of my favorites.
-                  Also, unrelated but touching my usb-c charger with my arm burns it. Probably because of my silver bracelet. 
+                  Also, unrelated but touching my usb-c charger with my arm burns it. Maybe because of my silver bracelet. 
                   If I keep my arm there, will it burn up? I don't want to find out because it hurts a lot to keep touching it for more than 12 seconds.
                   Feels like a fire ant is biting my arm.
                 </p>

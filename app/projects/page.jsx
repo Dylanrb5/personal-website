@@ -4,8 +4,9 @@ import React from 'react'
 import Link from 'next/link'
 import styles from './projects.module.css';
 import Image from 'next/image';
-import background from '../../public/images/tatiana-lapina.jpg'
-import HamburgerMenu from '@/app/components/HamburgerMenu'
+import background from '../../public/images/tatiana-lapina.jpg';
+import HamburgerMenu from '@/app/components/HamburgerMenu';
+import { track } from '@vercel/analytics';
 import { Lato } from 'next/font/google'
 
 const lato = Lato({
@@ -14,7 +15,21 @@ const lato = Lato({
 })
 
 const projects = () => {
-  const PostCard = ({title, desc, image, postName}) => {
+  const PostCard = ({title, desc, image, postName, externalLink}) => {
+    if(externalLink) {
+      return (
+      <a href={externalLink} target="_blank" className={styles.post} onClick={() => track('Website repo link clicked')}>
+      <div className='max-h-max'>
+        <div >
+          <div>
+            <h1 className={styles.header}>{title}</h1>
+            <p className={styles.body}>{desc}</p>
+          </div>
+        </div>
+      </div>
+      </a>
+      )
+    }
     return (
       <Link href={`/projects/${postName}`} className={styles.post}>
       <div className='max-h-max'>
@@ -56,11 +71,12 @@ const projects = () => {
         <div className={styles.content}>
 
           {/* <PostCard title={"Learning a 3rd Language??"} desc={"Click to find out what I'm learning..."} image={"https://png.pngtree.com/background/20230531/original/pngtree-money-foreign-language-money-word-translated-to-the-languages-of-the-picture-image_2828217.jpg"} postName={"learning-3rd-language"}/> */}
-          <PostCard title={"3D Horror Action-Exploration-RPG"} desc={"A soulslike, basically"} image={"https://www.shutterstock.com/image-photo/scary-ghost-on-dark-background-600nw-2025647777.jpg"} postName={"soulslike"}/>
-          <PostCard title={"Learning a 3rd Language??"} desc={"Click to find out what I'm learning..."} image={""} postName={"learning-3rd-language"}/>
+          <PostCard title={"Elden Ring Parody"} desc={"Just got the idea to make this"} postName={"er-parody"}/>
+          <PostCard title={"3D Horror Action-Exploration-RPG"} desc={"A soulslike, basically"} postName={"soulslike"}/>
           <PostCard title={"Horror Video Game"} desc={"So many things to do..."} image={"https://www.shutterstock.com/image-photo/scary-ghost-on-dark-background-600nw-2025647777.jpg"} postName={"horror-video-game"}/>
           <PostCard title={"Music"} desc={"Some of my music"} image={"https://drumconnexions.com/wp-content/uploads/makingbeats.jpg"} postName={"music"}/>
-          <PostCard title={"This website"} desc={"I think it looks pretty good"} image={""} postName={"../"}/>
+          <PostCard title={"Learning a 3rd Language??"} desc={"Click to find out what I'm learning..."} image={""} postName={"learning-3rd-language"}/>
+          <PostCard title={"This website"} desc={"I think it looks pretty good"} image={""} postName={"../"} externalLink={"https://github.com/Dylanrb5/personal-website"}/>
           {/* <p>And some other stuff</p> */}
 
         </div>

@@ -140,6 +140,12 @@ const page = () => {
                 </h1>
                 {/* <iframe className="mx-auto my-10" width="560" height="315" src="https://www.youtube.com/embed/sckCAmnpxQQ?si=raSv241eEKqL09tC" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe> */}
                 <iframe className="mx-auto my-10" width="560" height="315" src="https://www.youtube.com/embed/Jt8ljbzosAE?si=UQHzmvTl6A_hF0VS" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <p className='mb-3'>
+                  Might not look like much, but I think the player movement is pretty good, better than a number of indie soulslikes' movement, thanks to some subtle changes I made to the Unity 3rd-person controller.
+                  Plus there's action queuing.
+                  I tried to make the animation transitions as smooth as possible but it still needs some work. The roll is obviously an unacceptable distance, so I need to fix that.
+                  Everything in the video was made and animated by me. Well, except the player's jumping, walking and running animations.
+                </p>
 
 
                 <div className={styles.footer}>

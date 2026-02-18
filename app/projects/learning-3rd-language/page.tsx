@@ -80,7 +80,7 @@ const page = () => {
                 </p>
                 <p className='mb-8'>
                     in learning foreign languages? I don't know, I'm just pretty nosy. I want to know what people are talking about. 
-                    I never actually put much effort in learning new languages because I'm already bilingual, but I wanted to feel the struggle. 
+                    I had never actually put much effort in learning new languages because I'm already bilingual, but I wanted to feel the struggle. 
                     And of course, it would be cool wouldn't it? Like a new ability. Like unlocking a new country. Not that I get to travel internationally much.
                 </p>
 
@@ -96,13 +96,20 @@ const page = () => {
                 </p>
                 <Image width={300} height={300} src={"https://preview.redd.it/sorry-i-dont-speak-mandarin-v0-o3l11facixba1.jpg?auto=webp&s=ba5b075b7edbfe6fe0cc00572d18024c05c9ea57"} alt="post image" className={styles.image}/>
 
+                <p className='mb-3 mt-10 text-5xl'>
+                I'm also learning Arabic
+                </p>
+                <p>
+                  I've been learning Arabic on Duolingo for an unkown amount of time now.
+                </p>
+
                 <p className='mb-72'>
 
                 </p>
 
-                <p className={styles.footer}>
+                <div className={styles.footer}>
                   <Footer/>
-                </p>
+                </div>
 
             </div>
         </div>
