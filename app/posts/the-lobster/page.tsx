@@ -34,7 +34,7 @@ const page = () => {
 
                 <p className='mb-3'>
                 I'm not really one to do film reviews, but I should probably start doing these. 
-                This movie was full of absurdism, and I love absurdism. 8.5/10.
+                This movie was full of awkward interactions. 8.5/10.
                 </p>
 
                 <p className={styles.footer}>

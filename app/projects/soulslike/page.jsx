@@ -124,6 +124,14 @@ const page = () => {
                   Besides, it's kind of like pixel art in the way that it lets your imagination do some of the work, whereas hyper-realistic games leave zero room for it.
                 </p>
 
+                <h1 className={styles.bodyHeader}>
+                  Music/Soundtrack
+                </h1>
+                <p className='mb-3'>
+                  I'm not worried about this. I've got a lot of great chord progressions I want to use. 
+                  Also, Rach Piano Concerto 2 is in the public domain, so that's something.
+                </p>
+
 
                 <h1 className={styles.bodyHeader}>
                   How long will it take to make this game?
