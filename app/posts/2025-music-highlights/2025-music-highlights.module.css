@@ -4,9 +4,10 @@
 .bg {
     /* background-image: url("../../../public/images/hassaan.jpg"); */
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    top: 30%;
     /* object-fit: cover;
     background-position: center;
     background-size: 90vw;
@@ -15,11 +16,10 @@
 }
 
 .container {
-    background-image: url("../../../public/images/hassaan.jpg");
+    /* background-image: url("../../../public/images/hassaan.jpg"); */
     position: relative;
-    margin: auto;
+    margin: 10em auto 0;
     width: 70%;
-    top: 10em;
     padding: 20px;
     /* background-color: rgba(165, 42, 42, 0.307); */
 }

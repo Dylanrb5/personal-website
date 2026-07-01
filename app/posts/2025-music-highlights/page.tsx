@@ -69,8 +69,8 @@ const page = () => {
                   I don't know what most of the lyrics mean, but I can almost recite them perfectly. It's all about the sound of the words and instruments, not the meaning.
                   The bass is the most interesting bass part I've ever heard. The drums are perfectly in the pocket. 
                   The E-Guitar by Yoshimasa Terui is perfect and brings all the energy, along with the drums.
-                  You can pay attention to only a single instrument for the entire song, and it's a transcendental experience no matter what.
-                  It's serotonin on command with this song. I listen to it on repeat, but I don't listen to it too often so as to not ruin the immensely pleasurable effect.
+                  You can pay attention to only a single instrument for the entire song, and it's super awesome no matter what.
+                  It's serotonin on command with this song. I listen to it on repeat sometimes, but I don't listen to it so often that it becomes stale.
 
                 </p>
 
@@ -90,7 +90,7 @@ const page = () => {
                 <p className={styles.body}>
                   Another Japanese track, and, once again, it's about the sounds, not the meaning. Band name meaning? Who knows. It's kind of funny.
                   But it's pure, exciting energy. Perfect for hyping up for some sporting event. 
-                  In my case, pistol, but it doesn't go well with crooked, uneven floors. 
+                  In my case, pistol shooting, but it doesn't go well with crooked, uneven floors. 
                   Maybe I'm just making excuses, but I swear the room (fitted with electronic targets, for competition)
                   next to the one where we always practice (with manual, paper targets) has a floor that is NOT FLAT. I was not even slightly comfortable for even a second.
                   That or I just didn't get enough sleep. But anyway, this song brings sooooo much energy. No matter the situation, 3:22 will bring the hype.
@@ -111,11 +111,8 @@ const page = () => {
                 </div>
                 <p className={styles.body}>
                   Ah, it's just so beautiful. I don't like summer, but it reminds me of a beautiful West Coast summer. Sort of a Lady Gaga sound, although I don't quite remember what she sounds like.
-                  Similar raspy voice, I think. But you have to listen to it, at least once. Crying tears, confusing fears, they are no longer. 
+                  Similar raspy voice, I think. But you have to listen to it, at least once. 
                   The entire album is a great listen. One of my favorites.
-                  Also, unrelated but touching my usb-c charger with my arm burns it. Maybe because of my silver bracelet. 
-                  If I keep my arm there, will it burn up? I don't want to find out because it hurts a lot to keep touching it for more than 12 seconds.
-                  Feels like a fire ant is biting my arm.
                 </p>
 
                 <div className={styles.trackHeader}>
@@ -139,7 +136,7 @@ const page = () => {
                   This is the chromatic, unemotional BS, which distracts from the pain but doesn't make me feel much of anything. 
                   This is anything after the beautiful moments I mentioned, such as at exactly 5:47 and 7:09 (click on the image to view the youtube video).
                   I wish Sam had continued those gorgeous melodies in a way that is satisfying, but it is certainly hard enough to write those melodies in the first place.
-                  Thus, I will forgive him and simply imagine the piece ending just after those most-satisfying spots.
+                  Thus, I can forgive him.
                 </p>
 
                 <div className={styles.trackHeader}>
@@ -179,7 +176,7 @@ const page = () => {
                   You can only expect the most beautiful music from this Takashi guy.
                   Wow. If this isn't the most beautiful oboe music I've ever heard, I don't know what is... 
                   <br></br>
-                  Play me a more beautiful oboe solo and I'll pay you hundreds. But it would be impossible.
+                  Are there any oboe solos as beautiful as this one? Who knows.
                 </p>
 
 

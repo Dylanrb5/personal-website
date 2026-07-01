@@ -19,7 +19,7 @@ const page = () => {
   return (
     <>
         <HamburgerMenu />
-        <Image src={background} alt='background of cubes' className={styles.bg}/>
+        <Image src={background} alt='dark forest background' className={styles.bg}/>
         <div className="w-screen text absolute top-0 left-0 front-gradient-2"></div>
         <nav className="nav-left">
                 <Link href={"/"}>Home</Link>
@@ -36,7 +36,9 @@ const page = () => {
 
         <div className={styles.container}>
             <h1 className={styles.header}>3D Horror Action-Exploration-RPG</h1>
-            <h6 className={styles.date}>2026.00.00</h6>
+
+            <div className={styles.dateLabel}>Last Updated:</div>
+            <h6 className={styles.date}>2026.06.XX</h6>
             <div className={styles.body}>
                 {/* <p className='mb-3'>
                     Yeah so I finally made a blog... and on my own website ?? Isn't that cool. Everyone should have one of these. And why pay for a nasty website builder when you can have full control over everything? 
@@ -67,7 +69,7 @@ const page = () => {
                 is that this is actually a big animation project. You might think each enemy only has its attack animations, 
                 which are already hard enough to animate in a way that is fair, readable, and satisfying to dodge, 
                 but no, you have to make 
-                <span className='text-red-900'> idle animations, walking animations, running animations, 90-degree left + right turning animations, 
+                <span className='text-red-600'> idle animations, walking animations, running animations, 90-degree left/right turning animations, 
                 180 degree rotations, flinch animations for multiple directions, stance break animations, knocked-to-the-ground animations, death animations, 
                 and maybe even strafing, blocking, or dodging animations, depending on the enemy type. </span>
                 And they're all important, because the way these games feel is completely determined by the animations. 
@@ -76,9 +78,9 @@ const page = () => {
                 The good thing is that the bar is a bit lower for a solo dev—I'm sure players will be able to 
                 forgive slightly awkward animations if they know that it's one person doing everything.
                 Anyway, speaking of game feel, there are lots of small things that might be hard to notice but which have a huge impact, such as: 
-                <span className='text-red-900'> action queuing </span>, i.e., you can press an action button (roll, attack, jump) in the middle of your current action, 
-                and it will be performed once your current action is complete; <span className='text-red-900'> a small window </span> during an attack in which you can freely rotate before the weapon is at the end of its swing;
-                <span className='text-red-900'> a weapon trail </span> texture that follows behind every swing; there's probably more stuff but I can't remember it all right now.
+                <span className='text-red-600'> action queuing </span>, i.e., you can press an action button (roll, attack, jump) in the middle of your current action, 
+                and it will be performed once your current action is complete; <span className='text-red-600'> a small window </span> during an attack in which you can freely rotate before the weapon is at the end of its swing;
+                <span className='text-red-600'> a weapon trail </span> texture that follows behind every swing; there's probably more stuff but I can't remember it all right now.
                 </p>
 
                 <h1 className={styles.bodyHeader}>
@@ -134,7 +136,7 @@ const page = () => {
 
 
                 <h1 className={styles.bodyHeader}>
-                  How long will it take to make this game?
+                    How long will it take to make this game?
                 </h1>
                 <p className='mb-3'>
                   There's no way for me to really know, but this time feels different from all the other times when I attempted to create and finish a game.
@@ -144,8 +146,13 @@ const page = () => {
 
 
                 <h1 className={styles.bodyHeader}>
-                  Videos: (will post more over time)
+                  <div className='text-red-700'>
+                    Videos:
+                  </div>
                 </h1>
+                <h2 className={styles.bodyHeader}>
+                    Player Controller
+                </h2>
                 {/* <iframe className="mx-auto my-10" width="560" height="315" src="https://www.youtube.com/embed/sckCAmnpxQQ?si=raSv241eEKqL09tC" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe> */}
                 <iframe className="mx-auto my-10" width="560" height="315" src="https://www.youtube.com/embed/Jt8ljbzosAE?si=UQHzmvTl6A_hF0VS" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 <p className='mb-3'>
@@ -153,6 +160,17 @@ const page = () => {
                   Plus there's action queuing.
                   I tried to make the animation transitions as smooth as possible but it still needs some work. The roll is obviously an unacceptable distance, so I need to fix that.
                   Everything in the video was made and animated by me. Well, except the player's jumping, walking and running animations.
+                </p>
+
+                <h2 className={styles.bodyHeader}>
+                    Enemy Animation Practice
+                </h2>
+                <iframe className="mx-auto my-10" width="560" height="315" src="https://www.youtube.com/embed/EogTkLS5s1c?si=m5YN9-rtGLC777WA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <p className='mb-3'>
+                  Posted this on my "anonymous" Youtube channel. 
+                  I'm sure you can notice the connection between my name and this pseudonym.
+                  But actually, I might be able to pull off going by my first name online and keeping my surnames hidden. Haven't thought about it too much yet.
+                  I just want a sufficient level of anonymity.
                 </p>
 
 

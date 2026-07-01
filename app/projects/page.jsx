@@ -49,7 +49,7 @@ const projects = () => {
   return (
     <div className={`projects-page ${lato.className}`}>
         <HamburgerMenu />
-        <Image src={background} alt='background of cubes' className={styles.bg}/>
+        <Image src={background} alt='dark bakground' className={styles.bg}/>
         <div className="w-screen text absolute top-0 left-0 front-gradient-3"></div>
         
         <nav className="nav-left">
@@ -71,6 +71,7 @@ const projects = () => {
         <div className={styles.content}>
 
           {/* <PostCard title={"Learning a 3rd Language??"} desc={"Click to find out what I'm learning..."} image={"https://png.pngtree.com/background/20230531/original/pngtree-money-foreign-language-money-word-translated-to-the-languages-of-the-picture-image_2828217.jpg"} postName={"learning-3rd-language"}/> */}
+          <PostCard title={"Two Backrooms Games"} desc={"I love liminal spaces"} postName={"backroom"}/>
           <PostCard title={"Elden Ring Parody"} desc={"Just got the idea to make this"} postName={"er-parody"}/>
           <PostCard title={"3D Horror Action-Exploration-RPG"} desc={"A soulslike, basically"} postName={"soulslike"}/>
           <PostCard title={"Horror Video Game"} desc={"So many things to do..."} image={"https://www.shutterstock.com/image-photo/scary-ghost-on-dark-background-600nw-2025647777.jpg"} postName={"horror-video-game"}/>

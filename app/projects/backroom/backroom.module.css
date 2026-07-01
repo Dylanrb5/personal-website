@@ -30,7 +30,6 @@
     font-weight: 300;
     letter-spacing: 0.1em;
     font-size: 5em;
-    line-height: 1.2;
 }
 
 .date {
@@ -42,14 +41,6 @@
     border-radius: 35px;
     max-width: max-content;
     padding: 0.1em 0.4em 0.1em 0.4em;
-    opacity: 100%;
-}
-
-.dateRow {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    margin-bottom: 1em;
 }
 
 .dateLabel {
@@ -77,6 +68,21 @@
     font-weight: 300;
     line-height: 2em;
     
+}
+
+.imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.image {
+    width: min(100%, 500px);
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
 }
 
 .footer {
