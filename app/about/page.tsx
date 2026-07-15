@@ -39,8 +39,7 @@ const about = () => {
               I enjoy learning new skills, creating/exploring cool and claustrophobic liminal spaces, 
               writing, producing/listening to music, etc.
               I also like bad weather, dark humor (or anything that is funny), and an uncountable number of other miscellaneous things. 
-              Oh and of course I love technology and whatnot. Data, algorithms, design.
-              "Ever since I was young I wanted to transform unstructured data into actionable business insights."
+              Oh and of course I love technology and whatnot. Data, algorithms, design, etc.
               Is all of this supposed to be on the homepage? I don't know, but I think the home page looks cool like that. All minimal.
               {/* I say "brand new" because
               our new status as an MOV-class team requires us to have an infotainment system, and that's where I come in. Oh, also, 
