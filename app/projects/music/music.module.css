@@ -29,7 +29,7 @@
     font-family: "Playfair Display", serif;
     font-weight: 300;
     letter-spacing: 0.1em;
-    font-size: 5em;
+    font-size: clamp(55px, 8vw, 5em);
 }
 
 .date {

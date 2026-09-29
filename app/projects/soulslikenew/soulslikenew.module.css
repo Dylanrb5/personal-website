@@ -29,7 +29,7 @@
     font-family: "Lato", cursive;
     font-weight: 300;
     letter-spacing: 0.1em;
-    font-size: 5em;
+    font-size: clamp(55px, 8vw, 5em);
 }
 
 .date {
@@ -68,6 +68,15 @@
     font-weight: 300;
     line-height: 2em;
     
+}
+
+.video {
+    display: block;
+    width: 100%;
+    max-width: 830px;
+    height: auto;
+    aspect-ratio: 830 / 515;
+    border: 0;
 }
 
 .imageGallery {

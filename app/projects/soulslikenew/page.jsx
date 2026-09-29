@@ -64,7 +64,7 @@ const page = () => {
                 <h1 className={styles.bodyHeader}>
                   Video
                 </h1>
-                <iframe className="mx-auto my-10" width="830" height="515" src="https://www.youtube.com/embed/9q3ccf7xgQI?si=KqRvn55RVJFMId4a" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <iframe className={`${styles.video} mx-auto my-10`} src="https://www.youtube.com/embed/9q3ccf7xgQI?si=KqRvn55RVJFMId4a" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 <p className='mb-3'>
                     Made quite a bit of progress I think. And yes I made everything in the video except the music. Still a lot more to do.
                 </p>
