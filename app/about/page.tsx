@@ -62,7 +62,6 @@ const about = () => {
           <li>I greatly enjoy spicy food but also sweet treats. I might even like sweet treats more.</li>
           <li>I never eat savory snacks, except maybe cheese, occasionally</li>
           <li>Sports I've done: football, swimming, air pistol + .22 cal, air rifle. I wish I had played soccer in HS</li>
-          <li>I suppose I could replace large background images with creative polygons, or something artsy. For the sake of optimization. But I like these images.</li>
           {/* <li>I'm </li> */}
         </ul>
       </div>

@@ -71,6 +71,7 @@ const projects = () => {
         <div className={styles.content}>
 
           {/* <PostCard title={"Learning a 3rd Language??"} desc={"Click to find out what I'm learning..."} image={"https://png.pngtree.com/background/20230531/original/pngtree-money-foreign-language-money-word-translated-to-the-languages-of-the-picture-image_2828217.jpg"} postName={"learning-3rd-language"}/> */}
+          <PostCard title={"Soulslike"} desc={"Back to this"} postName={"soulslikenew"}/>
           <PostCard title={"Two Backrooms Games"} desc={"I love liminal spaces"} postName={"backroom"}/>
           <PostCard title={"Elden Ring Parody"} desc={"Just got the idea to make this"} postName={"er-parody"}/>
           <PostCard title={"3D Horror Action-Exploration-RPG"} desc={"A soulslike, basically"} postName={"soulslike"}/>
