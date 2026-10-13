@@ -12,7 +12,7 @@ const about = () => {
   return (
     <div className='about-page'>
       <HamburgerMenu />
-      <Image src={ashe} alt='about page background' className={styles.bg}/>
+      <Image src={ashe} alt="" sizes="100vw" preload className={styles.bg}/>
       <div className="w-screen text absolute top-0 left-0 front-gradient-3"></div>
       <nav className="navbar">
               <ul>

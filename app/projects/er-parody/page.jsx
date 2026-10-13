@@ -19,7 +19,7 @@ const page = () => {
   return (
     <>
         <HamburgerMenu />
-        <Image src={background} alt='background of cubes' className={styles.bg}/>
+        <Image src={background} alt="" sizes="100vw" preload className={styles.bg}/>
         <div className="w-screen text absolute top-0 left-0 front-gradient-2"></div>
         <nav className="nav-left">
                 <Link href={"/"}>Home</Link>

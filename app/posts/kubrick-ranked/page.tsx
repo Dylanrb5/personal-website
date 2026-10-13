@@ -12,7 +12,7 @@ const page = () => {
   return (
     <div >
         <HamburgerMenu />
-        <Image src={hassan} alt='background of cubes' className={styles.bg}/>
+        <Image src={hassan} alt="" sizes="100vw" preload className={styles.bg}/>
         <div className="w-screen text absolute top-0 left-0 front-gradient-2"></div>
         <nav className="nav-left text-[#b80000]">
                 <Link href={"/"}>Home</Link>
@@ -36,7 +36,7 @@ const page = () => {
                 </p>
 
                 <div className={styles.trackHeader}>
-                  <img src="https://fourstarfilmfan.com/wp-content/uploads/2015/07/dr-_strangelove.png" className='w-60 h-60'/>
+                  <img loading="lazy" decoding="async" src="https://fourstarfilmfan.com/wp-content/uploads/2015/07/dr-_strangelove.png" className='w-60 h-60'/>
                   <div className={styles.trackTitle}>
                     <h2>
                       #6
@@ -54,7 +54,7 @@ const page = () => {
 
 
                 <div className={styles.trackHeader}>
-                  <img src="https://londoncelticpunks.wordpress.com/wp-content/uploads/2024/08/barry-lydon.jpg?w=1024" className='w-60 h-60'/>
+                  <img loading="lazy" decoding="async" src="https://londoncelticpunks.wordpress.com/wp-content/uploads/2024/08/barry-lydon.jpg?w=1024" className='w-60 h-60'/>
                   <div className={styles.trackTitle}>
                     <h2>
                       #5
@@ -72,7 +72,7 @@ const page = () => {
 
 
                 <div className={styles.trackHeader}>
-                  <img src="https://pbcdn1.podbean.com/imglogo/ep-logo/pbblog3193288/EyesWideShut.jpg" className='w-60 h-60'/>
+                  <img loading="lazy" decoding="async" src="https://pbcdn1.podbean.com/imglogo/ep-logo/pbblog3193288/EyesWideShut.jpg" className='w-60 h-60'/>
                   <div className={styles.trackTitle}>
                     <h2>
                       #4
@@ -91,7 +91,7 @@ const page = () => {
                 </p>
 
                 <div className={styles.trackHeader}>
-                  <img src="https://www.vintagemovieposters.co.uk/wp-content/uploads/2018/07/IMG_6077.jpg" className='w-60 h-60'/>
+                  <img loading="lazy" decoding="async" src="https://www.vintagemovieposters.co.uk/wp-content/uploads/2018/07/IMG_6077.jpg" className='w-60 h-60'/>
                   <div className={styles.trackTitle}>
                     <h2>
                       #3
@@ -107,7 +107,7 @@ const page = () => {
 
 
                 <div className={styles.trackHeader}>
-                  <img src="https://upload.wikimedia.org/wikipedia/en/7/75/A-clockwork-orange.jpg" className='w-60 h-60'/>
+                  <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/en/7/75/A-clockwork-orange.jpg" className='w-60 h-60'/>
                   <div className={styles.trackTitle}>
                     <h2>
                       #2
@@ -125,7 +125,7 @@ const page = () => {
 
 
                 <div className={styles.trackHeader}>
-                  <img src="https://admin.itsnicethat.com/images/BlQzbIsVQj9egHHTQp1x9PaB-_k=/52925/format-webp%7Cwidth-1440/556de6817e74a92a52e45c88.jpg" className='w-60 h-60'/>
+                  <img loading="lazy" decoding="async" src="https://admin.itsnicethat.com/images/BlQzbIsVQj9egHHTQp1x9PaB-_k=/52925/format-webp%7Cwidth-1440/556de6817e74a92a52e45c88.jpg" className='w-60 h-60'/>
                   <div className={styles.trackTitle}>
                     <h2>
                       #1

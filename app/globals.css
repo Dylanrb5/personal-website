@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -107,8 +102,8 @@ body {
 }
 
 .page-1 {
-  background-image: url("../public/images/blocks.jpg");
-  object-fit: cover;
+  position: relative;
+  overflow: hidden;
   height: 100%;
   width: 100%;
   background-position: center;
@@ -160,8 +155,7 @@ body {
   user-select: none;
   /* font-family: "Lato",sans-serif;
   font-family: 'Playfair Display', serif; */
-  font-family: "Lateef", sans-serif;
-  font-family: var(--my-font), serif !important;
+  font-family: "Lateef", serif;
   z-index: 10;
   font-size: 0.9rem;
 }
@@ -198,7 +192,7 @@ body {
 }
 
 .nav-left {
-  font-family: "Playfair Display", serif;
+  font-family: "Lateef", serif;
   position: absolute;
   left: 2vw;
   top: 1vh;
@@ -587,7 +581,7 @@ body {
   .mobile-menu li {
     font-size: 2rem;
     letter-spacing: 2px;
-    font-family: var(--my-font), serif;
+    font-family: "Lateef", serif;
   }
 
   .mobile-menu a {

@@ -19,7 +19,7 @@ const page = () => {
   return (
     <>
         <HamburgerMenu />
-        <Image src={background} alt='dark forest background' className={styles.bg}/>
+        <Image src={background} alt="" sizes="100vw" preload className={styles.bg}/>
         <div className="w-screen text absolute top-0 left-0 front-gradient-2"></div>
         <nav className="nav-left">
                 <Link href={"/"}>Home</Link>
@@ -50,7 +50,7 @@ const page = () => {
                 Ok so I sort of abandoned the horror game attempts, but not entirely. The thing that was holding me back was the question, What is the player even supposed to do? 
                 The gameplay in horror games is often just chores plus exploration, so most of the work goes into writing the story and making the environment spooky.
                 Unfortunately, I'm not a great writer. Fortunately, I discovered the world of Dark Souls and Elden ring in mid-2025. 
-                After finishing the best game in the DS trilogy (Dark Souls 3), I was like, "Oh man, this is great. This is the kind of game I want to make. (But with a horror vibe)."
+                After finishing the best game in the DS trilogy (Dark Souls 3), I was like, "Oh wow, this is great. This is the kind of game I want to make. (But with a horror vibe)."
                 I realized that no matter how utterly obscure and cryptic the story/plot is, people will still love these games. You can even ignore the story entirely, and it's still a great experience.
                 You actually have gameplay! (I'm not hating on narrative/horror games (I love walking simulators)). 
                 </p>

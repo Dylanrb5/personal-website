@@ -12,7 +12,7 @@ const page = () => {
   return (
     <div >
         <HamburgerMenu />
-        <Image src={hassan} alt='background of cubes' className={styles.bg}/>
+        <Image src={hassan} alt="" sizes="100vw" preload className={styles.bg}/>
         <div className="w-screen text absolute top-0 left-0 front-gradient-2"></div>
         <nav className="nav-left text-[#b80000]">
                 <Link href={"/"}>Home</Link>
@@ -50,7 +50,7 @@ const page = () => {
 
                 <div className={styles.trackHeader}>
                 <a href="https://www.youtube.com/watch?v=2ZE9xvmFzyk" target="_blank">
-                  <img src="https://m.media-amazon.com/images/I/61Glb1I76hL._UF1000,1000_QL80_.jpg" className='w-60 h-60'/>
+                  <img loading="lazy" decoding="async" src="https://m.media-amazon.com/images/I/61Glb1I76hL._UF1000,1000_QL80_.jpg" className='w-60 h-60'/>
                   </a>
                   <div className={styles.trackTitle}>
                     <h2>
@@ -81,7 +81,7 @@ const page = () => {
 
                 <div className={styles.trackHeader}>
                 <a href="https://www.youtube.com/watch?v=6ro1aHvhGec" target="_blank">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/f/f0/Drukqs_%28Front_Cover%29.png" className='w-60 h-60'/>
+                  <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/en/f/f0/Drukqs_%28Front_Cover%29.png" className='w-60 h-60'/>
                   </a>
                   <div className={styles.trackTitle}>
                     <h2>
@@ -107,7 +107,7 @@ const page = () => {
 
                 <div className={styles.trackHeader}>
                 <a href="https://www.youtube.com/watch?v=Wn-uiYZK3WI" target="_blank">
-                  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/f8/bb/c4/f8bbc4ff-e789-3a59-4f18-63c231770f07/ANTCD-A0000001044.jpg/1200x1200bf-60.jpg" className='w-60 h-60'/>
+                  <img loading="lazy" decoding="async" src="https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/f8/bb/c4/f8bbc4ff-e789-3a59-4f18-63c231770f07/ANTCD-A0000001044.jpg/1200x1200bf-60.jpg" className='w-60 h-60'/>
                   </a>
                   <div className={styles.trackTitle}>
                     <h2>
@@ -130,7 +130,7 @@ const page = () => {
                 
                 <div className={styles.trackHeader}>
                 <a href="" target="_blank">
-                  <img src="https://www.cdunity.com/wp-content/uploads/2023/03/Donda-Album-Cover.png" className='w-60 h-60'/>
+                  <img loading="lazy" decoding="async" src="https://www.cdunity.com/wp-content/uploads/2023/03/Donda-Album-Cover.png" className='w-60 h-60'/>
                   </a>
                   <div className={styles.trackTitle}>
                     <h2>

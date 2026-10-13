@@ -7,6 +7,8 @@ import ContextBox from "./components/contextbox/ContextBox";
 import { useRouter } from "next/navigation";
 import { track } from '@vercel/analytics';
 import Link from "next/link";
+import Image from "next/image";
+import background from "../public/images/blocks.jpg";
 import { SessionProvider } from "next-auth/react";
 import {getUserSession} from "@/app/utils/session";
 import { Lateef, Lato } from 'next/font/google'
@@ -36,6 +38,7 @@ export default function Home() {
         {/* <Parallax pages={4}> */}
           {/* <ParallaxLayer speed={0.5}> */}
             <div className="page-1">
+            <Image src={background} alt="" fill sizes="100vw" preload className="object-cover" />
             <div className="text absolute top-0 left-0 front-gradient-4 w-full h-full"> &nbsp;</div>
             {/* <img src="../images/blocks.jpg" alt="blocks" className="bg-1" /> */}
             </div>
@@ -52,7 +55,7 @@ export default function Home() {
               </ul>
             </nav>
 
-            <div className='z-20 name-header text-white leading-none'>
+            <div className='z-20 name-header text-white leading-none font-sans'>
               <p>Dylan</p>
               <p className="">Rodriguez Barrera</p>
               <p className="sub-header">Game Dev <span className="whitespace-nowrap">+ More</span></p>
@@ -84,6 +87,8 @@ export default function Home() {
                 href="/projects/soulslikenew"
                 className="group mt-4 inline-block rounded-2xl border border-white/20 bg-black/35 px-5 py-4 shadow-[0_10px_35px_rgba(0,0,0,0.45)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-white/45 hover:bg-black/45"
               >
+                {/* <p className="text-xs uppercase tracking-[0.18em] text-white/70">Current Project:</p>
+                <p className="mt-1 text-xl leading-tight tracking-normal text-white group-hover:text-white/95">A Soulslike</p> */}
                 <p className="text-xs uppercase tracking-[0.18em] text-white/70">Current Project:</p>
                 <p className="mt-1 text-xl leading-tight tracking-normal text-white group-hover:text-white/95">A Soulslike</p>
               </Link>

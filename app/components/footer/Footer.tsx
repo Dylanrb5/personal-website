@@ -6,17 +6,17 @@ const Footer = () => {
         <ul className="footer_">
                   <li>
                     <a className="" target="_blank" href="https://www.instagram.com/dylanrb.camera.roll">
-                      <img src="../icons/ig-logo-white.png" className="icon-link-sm"/>
+                      <img loading="lazy" decoding="async" src="../icons/ig-logo-white.png" className="icon-link-sm"/>
                     </a>
                   </li>
                   <li className='mx-5'>
                     <a className="" target="_blank" href="https://www.github.com/dylanrb5">
-                      <img src="../icons/github-icon-white.png" className="icon-link-sm"/>
+                      <img loading="lazy" decoding="async" src="../icons/github-icon-white.png" className="icon-link-sm"/>
                     </a>
                   </li>
                   <li>
                     <a className="" target="_blank" href="https://www.linkedin.com/in/dylan-rb-0/">
-                      <img src="../icons/linkedin-white.png" className="icon-link-sm"/>
+                      <img loading="lazy" decoding="async" src="../icons/linkedin-white.png" className="icon-link-sm"/>
                     </a>
                   </li>
                   {/* <li className="font-extralight contact-link">

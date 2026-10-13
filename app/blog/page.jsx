@@ -55,10 +55,8 @@ const blog = () => {
         <div className="w-screen absolute top-0 left-0 front-gradient"></div>
 
         
-        <nav className="navbar">
-              <ul style={{ 
-                fontFamily: "Lateef",
-              }}>
+          <nav className="navbar" style={{ fontFamily: '"Lateef", serif' }}>
+            <ul>
                 <li>Blog</li>
                 <li><Link href={"/projects"}>Projects</Link></li>
                 <li><Link href={"/about"}>About</Link></li>

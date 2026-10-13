@@ -12,7 +12,7 @@ const page = () => {
   return (
     <div >
         <HamburgerMenu />
-        <Image src={hassan} alt='background of cubes' className={styles.bg}/>
+        <Image src={hassan} alt="" sizes="100vw" preload className={styles.bg}/>
         <div className="w-screen text absolute top-0 left-0 front-gradient-2"></div>
         <nav className="nav-left text-[#b80000]">
                 <Link href={"/"}>Home</Link>
@@ -50,7 +50,7 @@ const page = () => {
 
                 <div className={styles.trackHeader}>
                 <a href="https://www.youtube.com/watch?v=Ia1xDKiI06I" target="_blank">
-                  <img src="https://i.scdn.co/image/ab67616d0000b2734431077193a6da00e998e9b5" className='w-60 h-60'/>
+                  <img loading="lazy" decoding="async" src="https://i.scdn.co/image/ab67616d0000b2734431077193a6da00e998e9b5" className='w-60 h-60'/>
                   </a>
                   <div className={styles.trackTitle}>
                     <h2>
@@ -76,7 +76,7 @@ const page = () => {
 
                 <div className={styles.trackHeader}>
                 <a href="https://www.youtube.com/watch?v=5sq3I2c6jG8" target="_blank">
-                  <img src="https://i1.sndcdn.com/artworks-000002911095-62da3r-t500x500.jpg" className='w-60 h-60'/>
+                  <img loading="lazy" decoding="async" src="https://i1.sndcdn.com/artworks-000002911095-62da3r-t500x500.jpg" className='w-60 h-60'/>
                   </a>
                   <div className={styles.trackTitle}>
                     <h2>
@@ -98,7 +98,7 @@ const page = () => {
 
                 <div className={styles.trackHeader}>
                 <a href="https://www.youtube.com/watch?v=2rbHPahdbsc" target="_blank">
-                  <img src="https://i.scdn.co/image/ab67616d00001e02a98e67810aa6df434963e53c" className='w-60 h-60'/>
+                  <img loading="lazy" decoding="async" src="https://i.scdn.co/image/ab67616d00001e02a98e67810aa6df434963e53c" className='w-60 h-60'/>
                   </a>
                   <div className={styles.trackTitle}>
                     <h2>
@@ -117,7 +117,7 @@ const page = () => {
 
                 <div className={styles.trackHeader}>
                 <a href="https://www.youtube.com/watch?v=Km966YIqITg" target="_blank">
-                  <img src="https://www.classicalsource.com/wp-content/uploads/12933_1.jpg" className='w-60 h-60'/>
+                  <img loading="lazy" decoding="async" src="https://www.classicalsource.com/wp-content/uploads/12933_1.jpg" className='w-60 h-60'/>
                   </a>
                   <div className={styles.trackTitle}>
                     <h2>
@@ -141,7 +141,7 @@ const page = () => {
 
                 <div className={styles.trackHeader}>
                 <a href="https://www.youtube.com/watch?v=LhUWJ6JGUrg" target="_blank">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273cf0d212625819f28a06bb8b7" className='w-60 h-60'/>
+                  <img loading="lazy" decoding="async" src="https://i.scdn.co/image/ab67616d0000b273cf0d212625819f28a06bb8b7" className='w-60 h-60'/>
                   </a>
                   <div className={styles.trackTitle}>
                     <h2>
@@ -160,7 +160,7 @@ const page = () => {
 
                 <div className={styles.trackHeader}>
                 <a href="https://www.youtube.com/watch?v=I1NKEXwdF5c" target="_blank">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273cf0d212625819f28a06bb8b7" className='w-60 h-60'/>
+                  <img loading="lazy" decoding="async" src="https://i.scdn.co/image/ab67616d0000b273cf0d212625819f28a06bb8b7" className='w-60 h-60'/>
                   </a>
                   <div className={styles.trackTitle}>
                     <h2>

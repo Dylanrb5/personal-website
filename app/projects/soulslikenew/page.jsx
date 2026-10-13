@@ -1,30 +1,14 @@
-'use client'
-
-import React from 'react'
 import Link from 'next/link'
 import styles from './soulslikenew.module.css';
-import hassan from '../../../public/images/hassaan.jpg'
 import background from '../../../public/images/lh01.jpg'
-import lh00 from '../../../public/images/lh00.jpg'
-import lh02 from '../../../public/images/lh02.jpg'
-import lh03 from '../../../public/images/lh03.jpg'
-import lh04 from '../../../public/images/lh04.jpg'
-import lh05 from '../../../public/images/lh05.jpg'
 import Image from 'next/image';
-import Footer from '@/app/components/footer/Footer';
 import HamburgerMenu from '@/app/components/HamburgerMenu';
-import { Lato } from 'next/font/google'
-
-const lato = Lato({
-  subsets: ['latin'],
-  weight: ['100', '300', '400', '700'],
-})
 
 const page = () => {
   return (
     <>
         <HamburgerMenu />
-        <Image src={background} alt='background of cubes' className={styles.bg}/>
+        <Image src={background} alt="" sizes="100vw" preload className={styles.bg}/>
         <div className="w-screen text absolute top-0 left-0 front-gradient-5"></div>
         <nav className="nav-left">
                 <Link href={"/"}>Home</Link>
@@ -50,49 +34,21 @@ const page = () => {
                     I am unserious most of the time anyway.
                 </p> */}
 
-                <p className='mb-3'>
-
-                </p>
-                <p className='mb-3'>
-
-                </p>
-
                 <h1 className={styles.bodyHeader}>
-
+                  Videos
                 </h1>
-
-                <h1 className={styles.bodyHeader}>
-                  Video
-                </h1>
-                <iframe className={`${styles.video} mx-auto my-10`} src="https://www.youtube.com/embed/9q3ccf7xgQI?si=KqRvn55RVJFMId4a" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <iframe loading="lazy" className={`${styles.video} mx-auto my-10`} src="https://www.youtube.com/embed/TEbXV-KlGZg?si=GMn9xvyZ9hhZC3Re" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <p className='mb-10'>
+                    I needed poolrooms, so I added a water shader + caustics. Ripples only affect normals, but it looks kinda weird, so I plan to make it actually displace the vertices. 
+                    <br/>
+                    Also started working on sound design. Dynamic Reverb and stuff. I know some of the current sounds suck, but I'll find good ones once I reactivate my Splice subscription.
+                    <br/>
+                    Song: Allusive by Matt Christensen
+                </p>
+                <iframe loading="lazy" className={`${styles.video} mx-auto my-10`} src="https://www.youtube.com/embed/9q3ccf7xgQI?si=KqRvn55RVJFMId4a" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 <p className='mb-3'>
                     Made quite a bit of progress I think. And yes I made everything in the video except the music. Still a lot more to do.
                 </p>
-
-                <h1 className={styles.bodyHeader}>
-                
-                </h1>
-                <div className={styles.imageGallery}>
-                  {/* <Image width={500} src={background} alt="post image" className={styles.image}/>
-                  <Image width={500} height={300} src={lh00} alt="post image" className={styles.image}/>
-                  <Image width={500} height={300} src={lh02} alt="post image" className={styles.image}/>
-                  <Image width={500} height={300} src={lh03} alt="post image" className={styles.image}/>
-                  <Image width={500} height={300} src={lh04} alt="post image" className={styles.image}/>
-                  <Image width={500} height={300} src={lh05} alt="post image" className={styles.image}/> */}
-                </div>
-
-                <p className='mb-20'>
-                  
-                </p>
-
-
-                {/* <h1 className={styles.bodyHeader}>
-                  header
-                </h1> */}
-
-                {/* <div className={styles.footer}>
-                  <Footer/>
-                </div> */}
 
             </div>
         </div>

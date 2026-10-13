@@ -13,7 +13,7 @@ const page = () => {
   return (
     <div>
         <HamburgerMenu />
-        <Image src={abstract} alt='background of cubes' className={styles.bg}/>
+        <Image src={abstract} alt="" sizes="100vw" preload className={styles.bg}/>
         <div className="w-screen text absolute top-0 left-0 front-gradient-2"></div>
         <nav className="nav-left">
                 <Link href={"/"}>Home</Link>
@@ -73,7 +73,7 @@ const page = () => {
                     Yeah, I'll learn it some day.
                 </p>
 
-                <Image width={500} height={500} src={"https://us.123rf.com/450wm/wirestock/wirestock2311/wirestock231111795/218864902-a-person-presenting-the-virtual-projection-of-the-flags-of-different-countries.jpg?ver=6"} alt="post image" className={styles.image}/>
+                <Image width={500} height={500} sizes="(max-width: 714px) 70vw, 500px" src={"https://us.123rf.com/450wm/wirestock/wirestock2311/wirestock231111795/218864902-a-person-presenting-the-virtual-projection-of-the-flags-of-different-countries.jpg?ver=6"} alt="Person presenting flags" className={styles.image}/>
 
                 <p className='mb-3 mt-8 text-5xl'>
                 What's the point
@@ -94,7 +94,7 @@ const page = () => {
                   Pronounciation is hard to grasp quickly, but I'm starting to get the hang of it. I only know about 100 words so far, but I'm sure one day, within the next 365, I'll 
                   be able to eavesdrop on all the conversations I hear in Mandarin at this school (quite often). Oh, and I guess I could talk. To people. In Mandarin. Hypothetically.
                 </p>
-                <Image width={300} height={300} src={"https://preview.redd.it/sorry-i-dont-speak-mandarin-v0-o3l11facixba1.jpg?auto=webp&s=ba5b075b7edbfe6fe0cc00572d18024c05c9ea57"} alt="post image" className={styles.image}/>
+                <Image width={300} height={300} sizes="(max-width: 428px) 70vw, 300px" src={"https://preview.redd.it/sorry-i-dont-speak-mandarin-v0-o3l11facixba1.jpg?auto=webp&s=ba5b075b7edbfe6fe0cc00572d18024c05c9ea57"} alt="Mandarin-language meme" className={styles.image}/>
 
                 <p className='mb-3 mt-10 text-5xl'>
                 I'm also learning Arabic

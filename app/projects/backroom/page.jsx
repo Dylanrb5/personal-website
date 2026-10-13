@@ -24,7 +24,7 @@ const page = () => {
   return (
     <>
         <HamburgerMenu />
-        <Image src={background} alt='background of cubes' className={styles.bg}/>
+        <Image src={background} alt="" sizes="100vw" preload className={styles.bg}/>
         <div className="w-screen text absolute top-0 left-0 front-gradient-5"></div>
         <nav className="nav-left">
                 <Link href={"/"}>Home</Link>
@@ -90,12 +90,12 @@ const page = () => {
                   Some WIP screenshots from Blender
                 </h1>
                 <div className={styles.imageGallery}>
-                  <Image width={500} src={background} alt="post image" className={styles.image}/>
-                  <Image width={500} height={300} src={lh00} alt="post image" className={styles.image}/>
-                  <Image width={500} height={300} src={lh02} alt="post image" className={styles.image}/>
-                  <Image width={500} height={300} src={lh03} alt="post image" className={styles.image}/>
-                  <Image width={500} height={300} src={lh04} alt="post image" className={styles.image}/>
-                  <Image width={500} height={300} src={lh05} alt="post image" className={styles.image}/>
+                  <Image width={500} sizes="(max-width: 714px) 70vw, 500px" src={background} alt="post screenshot" className={styles.image}/>
+                  <Image width={500} height={300} sizes="(max-width: 714px) 70vw, 500px" src={lh00} alt="post screenshot" className={styles.image}/>
+                  <Image width={500} height={300} sizes="(max-width: 714px) 70vw, 500px" src={lh02} alt="post screenshot" className={styles.image}/>
+                  <Image width={500} height={300} sizes="(max-width: 714px) 70vw, 500px" src={lh03} alt="post screenshot" className={styles.image}/>
+                  <Image width={500} height={300} sizes="(max-width: 714px) 70vw, 500px" src={lh04} alt="post screenshot" className={styles.image}/>
+                  <Image width={500} height={300} sizes="(max-width: 714px) 70vw, 500px" src={lh05} alt="post screenshot" className={styles.image}/>
                 </div>
 
                 <p className='mb-20'>
